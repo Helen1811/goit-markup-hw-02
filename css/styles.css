@@ -1,6 +1,17 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--main-text-color);
+    margin: 0;
     
 }
 /*  цвет основного текста #2E2F42;*/
@@ -60,24 +71,21 @@ letter-spacing: 0.02em;
 color: var(--main-text-color);
 }
 
-.list-contact, 
-.mailto-list,
-.phon-list {
+.list-contact,
+.contact-list {
 text-decoration: none;
 list-style: none;
+font-style: normal;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--second-text-color);
 
 }
-.mailto-list:is(:hover, :focus) {
+.contact-list:is(:hover, :focus) {
 color: var(--btn-bg-color-aktiv);
-} 
 
-.phon-list:is(:hover, :focus) {
-color: var(--btn-bg-color-aktiv);
-}
+} 
 
 /* Сeкция HERO */
 
